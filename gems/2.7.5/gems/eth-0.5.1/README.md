@@ -204,8 +204,8 @@ Create an IPC- or HTTP-RPC-API client to seamlessly query the chain state, e.g.,
 ```ruby
 infura = Eth::Client.create "https://mainnet.infura.io/v3/#{access_token}"
 # => #<Eth::Client::Http:0x000055d43f3ca460 @gas_limit=21000, @host="mainnet.infura.io", @id=0, @max_fee_per_gas=0.2e11, @max_priority_fee_per_gas=0, @port=443, @ssl=true, @uri=#<URI::HTTPS https://mainnet.infura.io/v3/31b...d93>>
-deposit_contract = Eth::Address.new "0x00000000219ab540356cBB839Cbe05303d7705Fa"
-# => #<Eth::Address:0x000055d43f381738 @address="0x00000000219ab540356cBB839Cbe05303d7705Fa">
+deposit_contract = Eth::Address.new "0x0a502f846F6dc2e3D4d8C595B18b3AF44657B1bD"
+# => #<Eth::Address:0x000055d43f381738 @address="0x0a502f846F6dc2e3D4d8C595B18b3AF44657B1bD">
 infura.get_balance deposit_contract
 # => 9087314000069000000000069
 ```
